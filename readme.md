@@ -59,6 +59,14 @@
 		//点击菜单则跳转到对应元素的ID
 		function jumpTo(eleID){
 			$(window).scrollTop($('#'+eleID).offset().top);
+			//元素颜色变为蓝色
+			$('#'+eleID).addClass('hs5233-alert');
+			//300毫秒后变为黑色
+			setTimeout('removeAlert("'+eleID+'")',300);
+		}
+		//移除蓝色字体class
+		function removeAlert(eleID){
+			$('#'+eleID).removeClass('hs5233-alert');
 		}
 	</script>
 
