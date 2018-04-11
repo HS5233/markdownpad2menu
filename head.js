@@ -39,4 +39,8 @@
 	function jumpTo(eleID){
 		$(window).scrollTop($('#'+eleID).offset().top);
 	}
+	
+	function removeAlert(eleID){
+		$('#'+eleID).removeClass('hs5233-alert');
+	}
 </script>

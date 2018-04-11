@@ -285,33 +285,36 @@ img {
 /* 猎豹-HS5233 添加内容
 =============================================================================*/
 
-.hs-menu{
+.hs5233-menu{
   top: 0;
   left: 5%;
   width: 100%;
   text-align: left;
   position: absolute;
 }
-.hs-menu label{
+.hs5233-menu label{
   font-size: 18px;
   margin: 0px 0px 0px 6%;
   cursor:pointer;
 }
-.hs-menu ol{
+.hs5233-menu ol{
   margin: 0px;
   margin: 0px 0px 0px 8%;
   cursor:pointer;
 }
-.hs-fixed{
+.hs5233-fixed{
   position: fixed;
   overflow: scroll;
   height: 100%;
   width: 18%;
 }
-.hs-content{
+.hs5233-content{
   top: 0;
   right: 0;
   width: 75%;
   padding-right: 5%;
   position:absolute;
+}
+.hs5233-alert{
+	color:#0099FF;
 }
