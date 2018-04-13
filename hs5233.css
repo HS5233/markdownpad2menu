@@ -256,14 +256,19 @@ hr {
 
 /* TABLES
 =============================================================================*/
+table{
+	border-collapse : collapse ;
+}
 
 table th {
   font-weight: bold;
+  background-color: #EEEEEE;
 }
 
 table th, table td {
   border: 1px solid #ccc;
   padding: 6px 13px;
+  margin:0px 0px;
 }
 
 table tr {
