@@ -9,6 +9,9 @@
 	/* Version: 1.0 */
 	$(window).ready(function(e){
 		var menu = '';
+		var headTitle = $('h1').text();
+		$('h1').next().remove();
+		$('h1').remove();
 		$('body').children().each(function(index){
 			$(this).attr('ID','ele'+index);
 			if($(this).get(0).tagName=='H2'){
@@ -25,6 +28,7 @@
 		$('body').empty();
 		
 		var initHtml = '';
+		initHtml += '<div class="hs5233-head">'+headTitle+'</div>';
 		initHtml += '<div class="hs5233-fixed">';
 		initHtml += '	<div class="hs5233-menu">';
 		initHtml += '		<h2>目录</h2>';
@@ -37,7 +41,7 @@
 	});
 	
 	function jumpTo(eleID){
-		$(window).scrollTop($('#'+eleID).offset().top);
+		$(window).scrollTop($('#'+eleID).offset().top - 50);
 		$('#'+eleID).addClass('hs5233-alert');
 		setTimeout('removeAlert("'+eleID+'")',300);
 	}
