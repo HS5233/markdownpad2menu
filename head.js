@@ -6,16 +6,15 @@
 	
 	/* Create menu for MarkdownPad By 猎豹-HS5233 */
 	/* Author: 猎豹-HS5233 http://blog.hs5233.com */
-	/* Version: 1.0 */
+	/* Version: 2.0 */
 	$(window).ready(function(e){
-		var menu = '';
+		var menu = '<ol>';
 		var headTitle = $('h1').text();
-		$('h1').next().remove();
 		$('h1').remove();
 		$('body').children().each(function(index){
 			$(this).attr('ID','ele'+index);
 			if($(this).get(0).tagName=='H2'){
-				if(menu != ''){
+				if(menu != '<ol>'){
 					menu += '</ol>';
 				}
 				menu += '<label onclick="jumpTo(\'ele'+index+'\')"><strong>'+$(this).text()+'</strong></label><ol>';
