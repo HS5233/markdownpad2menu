@@ -333,11 +333,11 @@ img {
 	z-index:999;
 	padding:5px 0px 5px 12px;
 	font-weight:bold;
-	box-shadow:0px 5px 10px #666666;
+	box-shadow:0px 5px 5px #ccc;
 }
 ul, ol {
   padding-left: 0px !important;
 }
 .hs5233-menu ol li{
-margin-left:20px;
+  margin-left:20px;
 }
